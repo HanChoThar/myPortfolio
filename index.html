@@ -9,9 +9,51 @@
         
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
+        <link rel="preload" href="assets/img/hanchothar.webp" as="image" type="image/webp" />
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--=============== SEO META TAGS ===============-->
+        <meta name="description" content="Welcome to Han Cho Thar's portfolio. A skilled web developer with over 1 year of experience in creating software solutions. Explore projects, skills, and more.">
+        <meta name="keywords" content="Han Cho Thar, Web Developer, Portfolio, JavaScript, Vue, PHP, Laravel, MySQL, Docker, Frontend, Backend">
+        <meta name="author" content="Han Cho Thar">
+
+        <meta property="og:title" content="Han Cho Thar's Portfolio">
+        <meta property="og:description" content="Explore Han Cho Thar's portfolio showcasing projects, skills, and experience as a web developer.">
+        <meta property="og:image" content="assets/img/hanchothar.webp">
+        <meta property="og:url" content="https://your-portfolio-url.com">
+        <meta property="og:type" content="website">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Han Cho Thar's Portfolio">
+        <meta name="twitter:description" content="Explore Han Cho Thar's portfolio showcasing projects, skills, and experience as a web developer.">
+        <meta name="twitter:image" content="assets/img/hanchothar.webp">
+
+        <!--=============== JSON-LD STRUCTURED DATA ===============-->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Han Cho Thar",
+                "url": "https://your-portfolio-url.com",
+                "image": "assets/img/hanchothar.webp",
+                "jobTitle": "Web Developer",
+                "description": "A skilled web developer with over 3 year of experience in creating software solutions.",
+                "sameAs": [
+                    "https://www.linkedin.com/in/han-cho-thar",
+                    "https://github.com/HanChoThar"
+                ],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Freelance"
+                },
+                "knowsAbout": ["PHP", "Laravel", "JavaScript", "Vue", "MySQL",  "Docker", "Frontend Development", "Backend Development"],
+                "alumniOf": {
+                    "@type": "EducationalOrganization",
+                    "name": "Dagon University"
+                }
+            }
+        </script>
 
         <title>Han Cho Thar's Portfolio</title>
     </head>
@@ -25,7 +67,7 @@
                 <div class="profile__data">
                     <div class="profile__border">
                         <div class="profile__perfil">
-                            <img src="assets/img/hanchothar.jpg" alt="">
+                            <img width="120" height="120" src="assets/img/hanchothar.webp" alt="han cho thar">
                         </div>
                     </div>
 
@@ -33,21 +75,20 @@
                     <h3 class="profile__profession">Web developer</h3>
 
                     <ul class="profile__social">
-                        <!-- <a href="" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a> -->
-                        <a href="https://www.linkedin.com/in/han-cho-thar-11a8b4205/" target="_blank" class="profile__social-link">
+                        <a href="https://www.linkedin.com/in/han-cho-thar/" target="_blank" class="profile__social-link" aria-label="LinkedIn profile of Han Cho Thar" rel="noopener noreferrer">
                             <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/HanChoThar" target="_blank" class="profile__social-link">
+                          </a>
+                          
+                          <a href="https://github.com/HanChoThar" target="_blank" class="profile__social-link" aria-label="GitHub profile of Han Cho Thar" rel="noopener noreferrer">
                             <i class="ri-github-line"></i>
-                        </a>
+                          </a>
+                          
                     </ul>
                 </div>
 
                 <div class="profile__info">
                     <div class="profile__info-description">
-                        Welcome to my development portfolio! I am a skilled developer with over 1 year of experience and passion for creating
+                        Welcome to my development portfolio! I am a skilled developer with over 3 year of experience and passion for creating
                         software solutions. Explore my portfolio to see some
                         of the projects I have worked on and the skills I bring. 
                     </div>
@@ -71,15 +112,15 @@
                     </a>
 
                     <div class="profile__buttons-small">
-                        <a onclick="location.href='tel:+959754399497'" target="__blank" class="button button__small button__gray">
+                        <a href="tel:+959754399497" class="button button__small button__gray" aria-label="Call Han Cho Thar">
                             <i class="ri-phone-fill"></i>
-                        </a>
-                        <div id="detect">
-                        </div>
-                        <!-- <a onclick="location.href='https://mail.google.com/mail/u/0/?view=cm&to=henrycho626@gmail.com'" target="__blank" class="button button__small button__gray">
+                          </a>
+                          
+                          <a href="mailto:henrycho626@gmail.com" class="button button__small button__gray" aria-label="Email Han Cho Thar">
                             <i class="ri-mail-fill"></i>
-                        </a> -->
-                    </div>
+                          </a>
+                      </div>
+                      
                 </div>
             </div>
             
@@ -103,27 +144,29 @@
                     <!--=============== PROJECTS ===============-->
                     <div class="projects__content grid filters__active" data-content id="projects">
                         <article class="projects__card">
-                            <img src="assets/img/movie.png" alt="" class="projects__img">
+                            <img src="assets/img/movie.webp" alt="movie" class="projects__img" width="400" height="300" 
+                            loading="lazy">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">app</span>
                                     <h3 class="projects__title">Movie App</h3>
-                                    <a href="https://hanmovie.netlify.app/" class="projects__button button button__small">
+                                    <a href="https://hanmovie.netlify.app/" class="projects__button button button__small" aria-label="Visit Movie App website">
                                         <i class="ri-link"></i>
-                                    </a>
+                                    </a>                                
                                 </div>
                             </div>
                         </article>
 
                         <article class="projects__card">
-                            <img src="assets/img/space.png" alt="" class="projects__img">
+                            <img src="assets/img/space.webp" alt="space" class="projects__img" width="400" height="300" 
+                            loading="lazy">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">app</span>
                                     <h3 class="projects__title">Space app</h3>
-                                    <a href="https://spacehan.netlify.app/" class="projects__button button button__small">
+                                    <a href="https://spacehan.netlify.app/" class="projects__button button button__small" aria-label="Visit Space App website">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -131,13 +174,14 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="assets/img/bee.png" alt="" class="projects__img">
+                            <img src="assets/img/bee.webp" alt="bee" class="projects__img" width="400" height="300" 
+                            loading="lazy">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">app</span>
                                     <h3 class="projects__title">Bee landing Page</h3>
-                                    <a href="https://studio-bee.vercel.app/" class="projects__button button button__small">
+                                    <a href="https://studio-bee.vercel.app/" class="projects__button button button__small" aria-label="Visit Bee App website">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -145,13 +189,14 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="assets/img/tip.png" alt="" class="projects__img">
+                            <img src="assets/img/tip.webp" alt="tip" class="projects__img" width="400" height="300" 
+                            loading="lazy">
 
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">app</span>
                                     <h3 class="projects__title">Tip app</h3>
-                                    <a href="https://hantipcalculator.netlify.app/" class="projects__button button button__small">
+                                    <a href="https://hantipcalculator.netlify.app/" class="projects__button button button__small" aria-label="Visit Tip Calculator App website">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
@@ -257,7 +302,7 @@
 
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            <span class="footer__copy">
+            <span class="footer__copy" style="color: #555;">
                 &#169; Han Cho Thar's portfolio
             </span>
         </footer>
